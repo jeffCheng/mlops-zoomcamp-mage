@@ -1,5 +1,8 @@
 projects:
+  refined_flower: {}
   unit_0_setup: {}
-  unit_1_data_preparation: {}
+  unit_1_data_preparation:
+    path: unit_1_data_preparation
   unit_2_training: {}
   unit_3_observability: {}
+  virtuous_myth: {}
