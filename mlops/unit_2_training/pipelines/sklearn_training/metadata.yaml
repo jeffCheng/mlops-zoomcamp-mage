@@ -1,4 +1,42 @@
-blocks: []
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_2_training/global_data_products/trainingset.py
+    global_data_product:
+      uuid: training_set
+  downstream_blocks:
+  - local_model
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: trainingset
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: trainingset
+- all_upstream_blocks_executed: false
+  color: teal
+  configuration:
+    file_source:
+      path: unit_2_training/custom/local_model.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: local model
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - trainingset
+  uuid: local_model
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
